@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compara Números</title>
+    <script>
+
+        //Verificar se um número é divisível por 3 ou 5
+        // Caso seja, retorna 'true'
+        // Caso não seja, retorna 'false'
+
+        function verificaDivisivel(numero){
+            
+            if (numero % 3 === 0 || numero % 5 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        function verificaIntervalo(inicial, final) {
+            
+            let contador = 0;
+            let controle = inicial;
+
+            while(controle <= final) {
+
+                if (verificaDivisivel(controle)) { 
+                    console.log(controle);
+                    contador++;
+                
+                }
+                
+                controle++;
+            }
+
+            console.log('Quantidade: ' + contador);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
