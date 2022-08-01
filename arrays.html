@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Listas</title>
+    <script>
+        var carros = ["Gol", "Palio", "Uno"];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceitCarro = carros[2];
+        
+        console.log("Primeira posição: " + primeiroCarro);
+        console.log("Segunda posição: " + segundoCarro);
+        console.log("Terceira posição: " + terceitCarro);
+
+        carros[2] = "Fusca";
+        console.log(carros[2]);
+        console.log(carros); 
+
+        console.log("Tamanho do Array: " + carros.length);
+        console.log("Ultimo elemento do array: " + carros[carros.length - 1]);
+
+        carros[2] = "Argo";
+        console.log("Ultimo elemento do array: " + carros[carros.length - 1]);
+
+        carros[carros.length] = "Corolla";
+        console.log("Ultimo elemento do array: " + carros[carros.length - 1]);
+
+        //Inserir um elemento no fim da lista
+        carros.push("Kicks");
+        console.log(carros);
+
+        //Remover um elemento no fim da lista
+        console.log(carros.pop());
+        console.log(carros);
+
+        //Inserir um elemento no início da lista
+        carros.unshift("Jeta");
+        console.log(carros);
+
+        //Remover um elemento no início da lista
+        console.log(carros.shift());
+        console.log(carros);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
